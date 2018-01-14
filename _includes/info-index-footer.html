@@ -1,0 +1,11 @@
+<section>
+    <ul class="dates">
+        {% for item in site.data-info limit:5 %}
+        <li>
+            <span class="date"><strong></strong></span>
+            <h3><a href="/info">{{ item.judul }}</a></h3>
+            <p>{{ item.preview }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

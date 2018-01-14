@@ -1,0 +1,9 @@
+<div class="row">
+    {% for item in site.data-portofolio %}
+    <div class="4u 12u(mobile)">
+        <a href="/portofolio" class="image featured">
+            <amp-img src="{{ item.gambar-portofolio-1 }}" alt="{{ item.title-portofolio-1 }}" height="{{ item.height-portofolio-1 }}" width="{{ item.width-portofolio-1 }}" layout="responsive"></amp-img>
+        </a>
+    </div>
+    {% endfor %}
+</div>

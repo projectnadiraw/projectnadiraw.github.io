@@ -1,0 +1,21 @@
+<section>
+    <div class="row">
+        {% for item in site.data-event %}
+        <div class="6u 12u(mobile)">
+            <section class="box">
+                <a href="#" class="image featured">
+                    <div class="video">
+                        <amp-img alt="{{ item.judul }}" src="{{ item.gambar }}" width="{{ item.width }}" height="{{ item.height }}" layout="responsive">
+                        </amp-img>
+                    </div>
+                </a>
+                <header>
+                    <h3>{{ item.acara }}</h3>
+                    <p>{{ item.tanggal }} {{ item.bulan }} {{ item.tahun }} {{ item.jam }}</p>
+                </header>
+                <p>{{ item.deskripsi }}</p>
+            </section>
+        </div>
+        {% endfor %}
+    </div>
+</section>

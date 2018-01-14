@@ -1,0 +1,19 @@
+<section>
+    <div class="row">
+        {% for item in site.data-info limit:2 %}
+        <div class="6u 12u(mobile)">
+            <section class="box">
+                <a href="/info" class="image featured">
+                    <div class="video">
+                        <amp-img src="{{ item.gambar }}" alt="{{ item.judul }}" height="{{ item.height }}" width="{{ item.width }}" layout="responsive"></amp-img>
+                    </div>
+                </a>
+                <header>
+                    <h3>{{ item.judul }}</h3>
+                </header>
+                <p>{{ item.preview }}</p>
+            </section>
+        </div>
+        {% endfor %}
+    </div>
+</section>

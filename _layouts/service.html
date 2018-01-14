@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ⚡ lang="id">
+
+<head>
+    <title>{{ page.title }} | {{ site.judul }} | {{ site.name }}</title>
+    {% include meta.html %} {% include canonical.html %} {% include favicon.html %} {% include ampproject.html %} {% include amp-carousel.html %} {% include amp-boilerplate.html %} {% include amp-custom.min.html %} {% include amp-analytics.html %}
+</head>
+
+<body class="homepage">
+    {% include analytics.html %} {% include menu-nav.html %}
+    <div id="page-wrapper">
+        <!-- {% include header-slider.html %} -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="12u">
+                        <div class="row">
+                            {% for item in site.data-jasa %}
+                            <div class="6u 12u(mobile)">
+                                <section class="box">
+                                    <a class="image featured">
+                                        <div class="video">
+                                            <amp-img src="{{ item.gambar }}" alt="{{ item.judul }}" height="{{ item.height }}" width="{{ item.width }}" layout="responsive"></amp-img>
+                                        </div>
+                                    </a>
+                                    <header>
+                                        <h3>{{ item.judul }}</h3>
+                                    </header>
+                                    <p>{{ item.preview }}</p>
+                                </section>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <div class="row">
+                            <div class="8u 12u(mobile)">
+                                <amp-carousel width="700" height="570" layout="responsive" noloading type="slides" controls autoplay loop delay="3000">
+                                    {% for item in site.data-portofolio %}
+                                    <a href="/portofolio">
+                                        <amp-img src="{{ item.gambar-portofolio-1 }}" layout="responsive" height="{{ item.height-portofolio-1 }}" width="{{ item.width-portofolio-1 }}"></amp-img>
+                                    </a>
+                                    {% endfor %}
+                                </amp-carousel>
+                            </div>
+                            {% for item in site.data-jasa limit:1 %}
+                            <div class="4u 12u(mobile)">
+                                <section class="box">
+                                    <a href="/jasa" class="image featured">
+                                        <div class="video">
+                                            <amp-img src="{{ item.gambar }}" alt="{{ item.judul }}" height="{{ item.height }}" width="{{ item.width }}" layout="responsive"></amp-img>
+                                        </div>
+                                    </a>
+                                    <header>
+                                        <h3>{{ item.judul }}</h3>
+                                    </header>
+                                    <p>{{ item.preview }}</p>
+                                </section>
+                            </div>
+                            {% endfor %} 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <section id="footer" class="container">
+                <div class="row">
+                    <div class="11u 12u(mobile)">
+                        {% include info-index-footer.html %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        {% include contact.html %}
+                    </div>
+                    <div class="8u 12u(mobile)">
+                        {% include aboutus.html %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

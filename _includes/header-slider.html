@@ -1,0 +1,12 @@
+<div id="header-slider">
+    <amp-carousel width="700" height="280" layout="responsive" noloading type="slides" controls autoplay loop delay="3000">
+        {% for item in site.data-header-slider %}
+        <div>
+            <a href="{{ item.link }}"><amp-img src="{{ item.gambar }}" 
+            layout="responsive"
+            height="{{ item.height }}"
+            width="{{ item.width }}"></amp-img></a>
+        </div>
+        {% endfor %}
+    </amp-carousel>
+</div>

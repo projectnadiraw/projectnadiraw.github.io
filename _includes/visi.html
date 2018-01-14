@@ -1,0 +1,15 @@
+<div class="row">
+    {% for item in site.data-visi limit:3 %}
+    <div class="4u 12u(mobile)">
+        <section class="box">
+            <a href="#" class="image featured">
+                <amp-img src="{{ item.gambar-visi }}" alt="{{ item.title-visi }}" height="{{ item.height-visi }}" width="{{ item.width-visi }}" layout="responsive"></amp-img>
+            </a>
+            <header>
+                <h3>{{ item.title-visi }}</h3>
+            </header>
+            <p>{{ item.deskripsi-visi }}</p>
+        </section>
+    </div>
+    {% endfor %}
+</div>

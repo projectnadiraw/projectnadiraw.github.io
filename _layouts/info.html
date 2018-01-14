@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ⚡ lang="id">
+
+<head>
+    <title>{{ page.title }} | {{ site.judul }} | {{ site.name }}</title>
+    {% include meta.html %} {% include canonical.html %} {% include favicon.html %} {% include ampproject.html %} {% include amp-boilerplate.html %} {% include amp-custom.min.html %} {% include amp-analytics.html %}
+</head>
+
+<body class="homepage">
+    {% include analytics.html %} {% include menu-nav.html %}
+    <div id="page-wrapper">
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="12u">
+                        {% include info-page.html %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        {% include portofolio-1.html %}
+                    </div>
+                    <div class="12u">
+                        {% include visi.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <section id="footer" class="container">
+                <div class="row">
+                    <div class="11u 12u(mobile)">
+                        {% include info-index-footer.html %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        {% include contact.html %}
+                    </div>
+                    <div class="8u 12u(mobile)">
+                        {% include aboutus.html %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

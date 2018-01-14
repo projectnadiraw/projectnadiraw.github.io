@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ⚡ lang="id">
+
+<head>
+    <title>{{ page.title }} | {{ site.judul }} | {{ site.name }}</title>
+    {% include meta.html %} {% include canonical.html %} {% include favicon.html %} {% include ampproject.html %} {% include amp-boilerplate.html %} {% include amp-custom.min.html %} {% include amp-analytics.html %} {% include amp-iframe.html %}
+    
+</head>
+
+<body class="homepage">
+    {% include analytics.html %} {% include menu-nav.html %}
+    <div id="page-wrapper">
+        <div id="footer-wrapper">
+            <section class="container">
+                <div class="row">
+                    <div class="8u 12u(mobile)">
+                        {% include aboutus.html %}
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        {% include contact.html %}
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="main-wrapper">
+            <div class="container">
+                <div>
+                <!-- #### Google Maps -->
+                <!-- Embedding Google Maps is possible via the [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/guide) and requires an [API Key](https://developers.google.com/maps/documentation/embed/guide#api_key). -->
+                <amp-iframe width="600" height="250" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" src="https://www.google.com/maps/d/embed?mid=18WBCpEkzOKnGYEEebHKC6zSAYm3UGltj">
+                </amp-iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
