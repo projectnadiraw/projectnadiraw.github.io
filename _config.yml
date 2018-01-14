@@ -1,14 +1,14 @@
 author: dennyrwa
-name: ASLANTA WIJAYA KONTRAKTOR
-judul: Jasa Lapangan Tenis
+name: NADIRA WIJAYA KONTRAKTOR
+judul: Ahli Lapangan Tenis
 address: Dsn. Bakalan RT 004 RW 002 Jarakan, Gondang Tulungagung, Jawa Timur
 image-logo-1: assets/img/aslanta-wijaya-logo-lingkaran.svg
 image-logo-2: assets/img/aslanta-wijaya-logo-lingkaran.svg
-description: Jasa pembuatan lapangan olahraga tenis basket running track jogging track bola badminton futsal volley seluruh Indonesia
-description-2: Aslanta Wijaya hadir untuk menjawab kebutuhan Anda dalam pengerjaan pembangunan lapangan tenis dengan standart mutu dan pengerjaan ahli dalam bidangnya, melayani wilayah di seluruh Indonesia baik di Sumatera, Jawa, Bali, Kalimantan, Nusa Tenggara, Sulawesi dan juga Papua, Kami mengerjakan total mulai pembangunan awal, finishing dan pengecatan lapangan, perlengkapan tenis, pagar lapangan dan juga penerangan lapangan, tidak hanya melayani pembangunan lapangan tenis saja, Jasa kami melayani juga lapangan olahraga lainnya seperti lapangan basket, lapangan running track, jogging track, lapangan bola, lapangan badminton, lapangan futsal, lapangan volley
+description: Ahli pembuatan lapangan olahraga tenis basket running track jogging track bola badminton futsal volley seluruh Indonesia
+description-2: Nadira Wijaya melayani pembangunan lapangan tenis dengan standart mutu dan pengerjaan ahli dalam bidangnya, melayani wilayah di seluruh Indonesia baik di Sumatera, Jawa, Bali, Kalimantan, Nusa Tenggara, Sulawesi dan juga Papua, Kami mengerjakan total mulai pembangunan awal, finishing dan pengecatan lapangan, perlengkapan tenis, pagar lapangan dan juga penerangan lapangan, tidak hanya melayani pembangunan lapangan tenis saja, Jasa kami melayani juga lapangan olahraga lainnya seperti lapangan basket, lapangan running track, jogging track, lapangan bola, lapangan badminton, lapangan futsal, lapangan volley
 keywords: jasa lapangan tenis, ahli lapangan tenis, spesialis lapangan tenis, jasa lapangan tenis, Jasa Pembuatan Lapangan Olah Raga, Jasa pembuatan Lapangan Tenis, Jasa pembuatan Lapangan Basket, Jasa pembuatan Lapangan Volley
 exclude: [README.md]
-analytics-ga: UA-83154613-5
+analytics-ga:
 fb_app_id: 
 facebook: 
 instagram: 
@@ -16,7 +16,7 @@ twittersite:
 favicon: /assets/img/favicon.png
 permalink: pretty
 permalink: /404.html
-siteurl: https://aslantawijaya.com
+siteurl: https://nadirawijaya.com
 baseurl: 
 collections:
   data-header-slider:
